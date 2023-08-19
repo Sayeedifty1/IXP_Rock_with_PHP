@@ -41,7 +41,7 @@ setcookie($cookie_name, $cookie_value, time() + (86400 * 30), "/"); // 86400 = 1
    echo "Hello hey";*/  //comment //! multi line comment /*-----*/,  single line comment //, #
 
     ?>
-<!-- cookies -->
+    <!-- cookies -->
     <?php
     if (!isset($_COOKIE[$cookie_name])) {
         echo "Cookie named '" . $cookie_name . "' is not set!";
@@ -191,6 +191,14 @@ setcookie($cookie_name, $cookie_value, time() + (86400 * 30), "/"); // 86400 = 1
         echo "The number is: $x <br>";
     }
     ?>
+
+    <!--//!Debugging Techniques In PHP
+    Method 1: var_dump()
+    Method 2: print_r()
+    Method 3: get_defined_vars()
+    Method 4: debug_zval_dump()
+    Method 5: debug_print_backtrace()
+    Method 6: debug_backtrace() -->
 </body>
 
 </html>
